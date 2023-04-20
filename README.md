@@ -2,20 +2,22 @@
 
 ## Extensions
 
-### HTML Tools 
+### HTML Tools
 
 * **[Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)** - Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text.
   * **NOTE:** I no longer use this extension as the functionality is built in to VS Code these days. Instead, I use these settings to support auto-closing tags in HTML and JSX/TSX:
 * **[Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)** – Automatically rename paired HTML/XML tag
   * **NOTE:** While this feature was added to VS Code for HTML via the `editor.linkedEditing` setting, it is not yet supported for JSX/TSX. [Tracking this issue](https://github.com/microsoft/vscode/issues/85707) and I plan on dropping this extension once it's finally supported natively!
 
-### CSS Tools 
+### CSS Tools
 
 * **[Intellisense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)** – Could really use a snappier name, but you get the picture.
   * **NOTE:** While handy, I no longer use this extension because it's just a bit too harsh on the CPU.
+
 * **[SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)** – Advanced autocompletion and refactoring support for SCSS.
 
 ### JavaScript/TypeScript Tools
+
 * **[JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)** – Code snippets for JavaScript in ES6 syntax.
 * **[ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)** – Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
 * **[CSS-in-JS](https://marketplace.visualstudio.com/items?itemName=paulmolluzzo.convert-css-in-js)** – Auto-complete CSS-in-JS. Also let's you quickly toggle between standard CSS and JS object-syntax, a huge time saver!
@@ -24,7 +26,7 @@
 * **[TypeScript Importer](https://marketplace.visualstudio.com/items?itemName=pmneo.tsimporter)** – Autocomplete and auto-import types from `node_modules` or elsewhere from your project.
 * **[vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)** – Syntax highlighting and formatting for Styled Components (though it works with Emotion and other libs that use the same `styled` API).
 
-### Git Tools 
+### Git Tools
 
 * **[Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)** – View git log, file history, compare branches or commits.
 * **[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)** – Loads of goodies here if you prefer to visualize Git history, step through commits, a lots more. One of my favorite extensions on the list.
@@ -32,7 +34,7 @@
 * **[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)** – Your AI pair programmer.
 * **[GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)** – Pull Request and Issue Provider for GitHub.
 
-### Markdown Tools 
+### Markdown Tools
 
 * **[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)** – Lots of features to simplify writing markdown. Click the link if you're curious because they keep adding more!
 * **[Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)** – Real-time preview your markdown in a side panel while you write. I'm using it while I write this very document OMG.
@@ -44,7 +46,7 @@
 * **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)** – Linter for JavaScript and TypeScript.
 * **[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)** – Linter for CSS, SCSS, SASS.
 * **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** – Code formatter using prettier.
-  
+
 ### Theme and Icons
 
 * **[Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)** – VSCode Theme based on Atom's One Dark theme.
@@ -78,6 +80,7 @@
 * **[Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)** – Hard word wrapping for comments and other text at a given column.
 * **[Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)** – Display import/require package size in the editor.
 * **[sort-imports](https://marketplace.visualstudio.com/items?itemName=amatiasq.sort-imports)** – Sort ES6 imports automatically.
+
 ## My Settings
 
 ```json
@@ -255,6 +258,19 @@
   ],
   "cSpell.userWords": [
     "stylelint"
+  ],
+  // Specify paths/files to ignore.
+  "cSpell.ignorePaths": [
+    "node_modules", // this will ignore anything the node_modules directory
+    "**/node_modules", // the same for this one
+    "**/node_modules/**", // the same for this one
+    "node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+    "vscode-extension", //
+    ".git", // Ignore the .git directory
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll", // Ignore all .dll files
+    ".vscode/**.json",
+    "**.md"
   ],
   "editor.quickSuggestions": {
     "strings": true
