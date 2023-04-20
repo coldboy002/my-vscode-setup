@@ -1,0 +1,207 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.fontFamily": "Fira Code,'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "same",
+  "editor.inlineSuggest.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": true,
+  "editor.renderControlCharacters": false,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "html.suggest.html5": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "njk": "html",
+    "nunjucks": "html",
+    "twig": "html"
+  },
+  /// FORMAT
+  // Set the default
+  // "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Enable per-language
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "files.trimTrailingWhitespace": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    // Auto Fix for all
+    "source.fixAll": true,
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    // https://github.com/stylelint/vscode-stylelint
+    "css",
+    "html",
+    "less",
+    "markdown",
+    "postcss",
+    "sass",
+    "scss",
+    "source.css.styled",
+    "styled-css",
+    "sugarss",
+    "xml",
+    "xsl"
+  ],
+  "markdownlint.config": {
+    "default": true,
+    "MD001": false,
+    "MD010": false,
+    "MD024": false,
+    "MD025": false
+  },
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/bower_components/**": true,
+    "**/jspm_packages/**": true,
+    "**/node_modules/**": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "node_modules": true
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.currentLine.enabled": false,
+  // config gitSemanticCommit
+  "gitSemanticCommit.types": [
+    {
+      "type": "📦 build",
+      "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"
+    },
+    {
+      "type": "🤖 ci",
+      "description": "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"
+    },
+    {
+      "type": "📝 docs",
+      "description": "Documentation only changes"
+    },
+    {
+      "type": "✨ feat",
+      "description": "A new feature"
+    },
+    {
+      "type": "🐛 fix",
+      "description": "A bug fix"
+    },
+    {
+      "type": "🎉 init",
+      "description": "Initial commit"
+    },
+    {
+      "type": "⚡ perf",
+      "description": "A code change that improves performance"
+    },
+    {
+      "type": "♻️ refactor",
+      "description": "A code change that neither fixes a bug nor adds a feature"
+    },
+    {
+      "type": "⏪ revert",
+      "description": "Reverting changes"
+    },
+    {
+      "type": "💄 style",
+      "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
+    },
+    {
+      "type": "✅ test",
+      "description": "Adding missing tests or correcting existing tests"
+    }
+  ],
+  "githubPullRequests.createOnPublishBranch": "never",
+  "tabnine.experimentalAutoImports": true,
+  // live-sass
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/css"
+    }
+  ],
+  "cSpell.enableFiletypes": [
+    "!html"
+  ],
+  "cSpell.userWords": [
+    "stylelint"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "rewrap.wrappingColumn": 80,
+  "todohighlight.exclude": [
+    "**/vendor/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map"
+  ],
+  "typescript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.validate.enable": true,
+  "typescript.tsserver.log": "verbose",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.showIcons": false,
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.accessibilitySupport": "off",
+  "todohighlight.isEnable": false,
+}

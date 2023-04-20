@@ -1,0 +1,116 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // ========== HTML/CSS ==========
+    // Auto Close Tag
+    "formulahendry.auto-close-tag",
+    // Auto Rename Tag
+    "formulahendry.auto-rename-tag",
+    // Intellisense for CSS class names in HTML
+    "Zignd.html-css-class-completion",
+    // SCSS IntelliSense
+    "mrmlnc.vscode-scss",
+    // ========== JAVASCRIPT/TYPESCRIPT ==========
+    // JavaScript (ES6) code snippets
+    "xabikos.javascriptsnippets",
+    // ES7 React/Redux/GraphQL/React-Native snippets
+    "dsznajder.es7-react-js-snippets",
+    // CSS-in-JS
+    "paulmolluzzo.convert-css-in-js",
+    // Document This
+    "oouo-diogo-perdigao.docthis",
+    // npm intellisense
+    "christian-kohler.npm-intellisense",
+    // TypeScript Importer
+    "pmneo.tsimporter",
+    // vscode-styled-components
+    "styled-components.vscode-styled-components",
+    // ========== GIT ==========
+    // Git History
+    "donjayamanne.githistory",
+    // GitLens
+    "eamodio.gitlens",
+    // gitignore
+    "codezombiech.gitignore",
+    // GitHub Copilot
+    "GitHub.copilot",
+    // GitHub Pull Requests and Issues"
+    "github.vscode-pull-request-github",
+    // ========== MARKDOWN==========
+    // Markdown All in One
+    "yzhang.markdown-all-in-one",
+    // Markdown Preview Enhanced
+    "shd101wyy.markdown-preview-enhanced",
+    // Markdown Table Formatter
+    "fcrespo82.markdown-table-formatter",
+    // ========== LINT AND FORMAT==========
+    // EditorConfig for VS Code
+    "EditorConfig.EditorConfig",
+    // ESLint
+    "dbaeumer.vscode-eslint",
+    // Stylelint
+    "stylelint.vscode-stylelint",
+    // Prettier
+    "esbenp.prettier-vscode",
+    //========== THEME ==========
+    // Atom One Dark Theme
+    "akamud.vscode-theme-onedark",
+    // Ayu
+    "teabyii.ayu",
+    // Dracula Official
+    "dracula-theme.theme-dracula",
+    //========== ICON ==========
+    // Material Icon Theme
+    "PKief.material-icon-theme",
+    // vscode-icons
+    "vscode-icons-team.vscode-icons",
+    // VSCode Great Icons
+    "emmanuelbeziat.vscode-great-icons",
+    //========== GENERAL ==========
+    // advanced-new-file
+    "patbenatar.advanced-new-file",
+    // change-case
+    "wmaurer.change-case",
+    // Live Server
+    "ritwickdey.LiveServer",
+    // Quokka.js
+    "WallabyJs.quokka-vscode",
+    // Tabnine AI
+    "TabNine.tabnine-vscode",
+    // File Utils
+    "sleistner.vscode-fileutils",
+    // Path Intellisense
+    "christian-kohler.path-intellisense",
+    // Project Manager
+    "alefragnani.project-manager",
+    // TODO Highlight
+    "wayou.vscode-todo-highlight",
+    // Better Comments
+    "aaron-bond.better-comments",
+    // Comment Anchors
+    "ExodiusStudios.comment-anchors",
+    // Bookmarks
+    "alefragnani.bookmarks",
+    // indent-rainbow
+    "oderwat.indent-rainbow",
+    // Color Highlight
+    "naumovs.color-highlight",
+    // Image preview
+    "kisstkondoros.vscode-gutter-preview",
+    // Wrap Selection
+    "konstantin.wrapSelection",
+    // DotENV
+    "mikestead.dotenv",
+    // REST Client
+    "humao.rest-client",
+    // GraphQL
+    "GraphQL.vscode-graphql",
+    // Rewrap
+    "stkb.rewrap",
+    // Import Cost
+    "wix.vscode-import-cost",
+    // sort-imports
+    "amatiasq.sort-imports",
+  ]
+}
